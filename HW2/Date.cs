@@ -53,7 +53,7 @@ namespace HW_2
         public void setDate (string UsrDate)
         {
             string[] dateArry = UsrDate.Split('/');
-
+            //validate date and pass correct values
             if(DateValidation(Convert.ToInt32(dateArry[0]),Convert.ToInt32(dateArry[1]),Convert.ToInt32(dateArry[2])))
             {
             mon = Convert.ToInt32(dateArry[0]);
@@ -62,9 +62,9 @@ namespace HW_2
             }
             else
             {
-               mon = 1;
-               day = 1;
-               year = 1900;
+               mon = eMonth;
+               day = eDay;
+               year = eYear;
             }
         }
 
