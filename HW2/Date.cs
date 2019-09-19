@@ -12,9 +12,9 @@ namespace HW_2
     class tDate
     {
         // Saving Dates
-        int mon = 1;
-        int day = 1;
-        int year = 1900;   
+        static int mon = 1;
+        static int day = 1;
+        static int year = 1900;   
 
        //earliest date int values
         static int eDay = 0;
