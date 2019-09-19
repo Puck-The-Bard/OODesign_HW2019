@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zach\\Documents\\WT2019_Sem2\\OODesign\\HW 2\\HW 2.csproj",
+      "projectUniqueName": "C:\\Users\\Zach\\Documents\\WT2019_Sem2\\OODesign\\Homework\\HW2\\HW 2.csproj",
       "projectName": "HW 2",
-      "projectPath": "C:\\Users\\Zach\\Documents\\WT2019_Sem2\\OODesign\\HW 2\\HW 2.csproj",
+      "projectPath": "C:\\Users\\Zach\\Documents\\WT2019_Sem2\\OODesign\\Homework\\HW2\\HW 2.csproj",
       "packagesPath": "C:\\Users\\Zach\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zach\\Documents\\WT2019_Sem2\\OODesign\\HW 2\\obj\\",
+      "outputPath": "C:\\Users\\Zach\\Documents\\WT2019_Sem2\\OODesign\\Homework\\HW2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

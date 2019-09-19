@@ -1,0 +1,11 @@
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\bin\Debug\netcoreapp2.2\HW 2.deps.json
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\bin\Debug\netcoreapp2.2\HW 2.runtimeconfig.json
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\bin\Debug\netcoreapp2.2\HW 2.runtimeconfig.dev.json
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\bin\Debug\netcoreapp2.2\HW 2.dll
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\bin\Debug\netcoreapp2.2\HW 2.pdb
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\obj\Debug\netcoreapp2.2\HW 2.csprojAssemblyReference.cache
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\obj\Debug\netcoreapp2.2\HW 2.csproj.CoreCompileInputs.cache
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\obj\Debug\netcoreapp2.2\HW 2.AssemblyInfoInputs.cache
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\obj\Debug\netcoreapp2.2\HW 2.AssemblyInfo.cs
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\obj\Debug\netcoreapp2.2\HW 2.dll
+C:\Users\Zach\Documents\WT2019_Sem2\OODesign\Homework\HW2\obj\Debug\netcoreapp2.2\HW 2.pdb

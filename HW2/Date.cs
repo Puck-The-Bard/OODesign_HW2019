@@ -12,21 +12,33 @@ namespace HW_2
     class tDate
     {
         // Saving Dates
-        static int mon = 1;
-        static int day = 1;
-        static int year = 1900;   
+        int mon = 1;
+        int day = 1;
+        int year = 1900;   
 
-        static string earliestDate = "1/1/1900";
-        static string latestDate = "12/31/2100";
-        static string usrDate = "1/1/1900";
+       //earliest date int values
+        static int eDay = 0;
+        static int eMonth = 0;
+        static int eYear = 0;
+
+        //latest date int values
+        static int lDay = 0;
+        static int lMonth = 0;
+        static int lYear = 0;
         
         //takes and saves user date input
-        public tDate(int day, int month, int usrYear)
+        public tDate()
         {
-            if(DateValidation(day, month,usrYear))
+            mon = 1;
+            day = 1;
+            year = 1900;
+        }
+        public void setDate(int usrMonth, int usrDay, int usrYear)
+        {
+            if(DateValidation(usrMonth, usrDay,usrYear))
            {
-            mon = day;
-            day = month;
+            day = usrDay;
+            mon = usrMonth;
             year = usrYear;
            }
            else
@@ -37,8 +49,8 @@ namespace HW_2
            }
         }
 
-        //saves user date input with strings in US format
-        public tDate (string UsrDate)
+       //saves user date input with strings in US format
+        public void setDate (string UsrDate)
         {
             string[] dateArry = UsrDate.Split('/');
 
@@ -56,13 +68,43 @@ namespace HW_2
             }
         }
 
+        //set earliest date
+        public void earliestDate(int usrDay, int usrMonth, int usrYear)
+        {
+            eDay = usrDay;
+            eMonth = usrMonth;
+            eYear = usrYear;
+        }
+        public void earliestDate(string usrDate)
+        {
+            string[] dateArry = usrDate.Split('/');
+            earliestDate(Convert.ToInt32(dateArry[0]),Convert.ToInt32(dateArry[1]),Convert.ToInt32(dateArry[2]));
+
+        }
+
+        //set latest date
+        public void latestDate(int usrDay, int usrMonth, int usrYear)
+        {
+            lDay = usrDay;
+            lMonth = usrMonth;
+            lYear = usrYear;
+        }
+        public void latestDate(string usrDate)
+        {
+            string[] dateArry = usrDate.Split('/');
+            latestDate(Convert.ToInt32(dateArry[0]),Convert.ToInt32(dateArry[1]),Convert.ToInt32(dateArry[2]));
+
+        }
+
+ 
+
 
         //verify valid date input and output a bool value
-        static bool DateValidation(int d, int mon, int year)
+        static bool DateValidation(int day, int mon, int year)
         {
-            if(d > 0 && d <= 31 && mon > 0 && mon <= 12 && year >= 1900 && year <= 2100)
+            if(day >= eDay && day <= lDay && mon >= eMonth && mon <= lMonth && year >= eYear && year <= lYear)
             {
-              return true;  
+                return true;  
             }
             else
             {
@@ -72,17 +114,20 @@ namespace HW_2
 
 
         //print date to screen
-        static void ShowDate(string selec)
+        public void ShowDate(string selec)
         {
+            //Console.WriteLine("\nMonth: " + mon + "\nDay:" + day + "\nyear: " + year);
+            //select format and print date in correct format
             switch(selec)
             {
                 case "U":
-                    Console.WriteLine($"{0}/{1}/{2}",mon,day,year);
+                    Console.WriteLine($"{mon}/{day}/{year}");
                     break;
                 case "E":
-                    Console.WriteLine($"{1}/{0}/{2}",mon,day,year);
+                    Console.WriteLine($"{day}/{mon}/{year}");
                     break;
                 default:
+                    Console.WriteLine("\nMonth: " + mon + "\nDay:" + day + "\nyear: " + year);
                     break;
             }
         }
